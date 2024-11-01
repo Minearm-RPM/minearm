@@ -1,0 +1,37 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<div class="relative">
+  <pre
+    class="shadow-2xl bg-black code"><button aria-label="copy-button" class="copy-button absolute  z-20 top-2 right-2  rounded-md transition-all ease-in max-w-full max-h-fit hover:text-indigo-400"><Icon name="tabler:copy" /></button><span class="check-span absolute z-10 top-2 right-2  rounded-md transition-all ease-in opacity-0 text-green-300 max-w-full max-h-fit "><Icon name="tabler:check" /></span><slot /></pre>
+</div>
+<script>
+  const coppyBlock = () => {
+    const proBlock = document.querySelectorAll('pre');
+    proBlock.forEach((pre) => {
+      const button = pre.querySelector('.copy-button');
+      const check = pre.querySelector('.check-span');
+      const code = pre.querySelector('code');
+      if (code) {
+        const lineSpans = code?.querySelectorAll('span.line');
+        lineSpans.forEach((span, index) => {
+          let indexData = `${index+1}.`;
+          span.setAttribute('data-index', indexData);
+        });
+      }
+
+      button!.addEventListener('click', () => {
+        navigator.clipboard.writeText(pre.textContent?.trim() || '');
+        check?.classList.remove('opacity-0');
+        button?.classList.add('opacity-0');
+        setTimeout(() => {
+          check?.classList.add('opacity-0');
+          button?.classList.remove('opacity-0');
+        }, 2000);
+      });
+    });
+  };
+  coppyBlock(); // initial load
+  document.addEventListener('astro:after-swap', coppyBlock); // re-run after each page change
+</script>
