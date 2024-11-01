@@ -1,4 +1,5 @@
 # Minearm & Website
+Minearm是一个astro主题
 # 本主题是从HusBlog改进而来的
 url: https://github.com/KraHsu/HsuBlog.git
 
