@@ -1,5 +1,5 @@
-#Minearm-RPM & Website
-#Minearm是一个漂亮华丽的astro主题
+# Minearm-RPM & Website
+# Minearm是一个漂亮华丽的astro主题
 
 # 此主题使用astro官方模板作为地基
 源: https://github.com/
