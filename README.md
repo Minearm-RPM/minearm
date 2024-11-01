@@ -2,6 +2,7 @@
 # 本主题是从HusBlog改进而来的
 url: https://github.com/KraHsu/HsuBlog.git
 
+成品: www.minearm.org
 
 # 文件结构
 
