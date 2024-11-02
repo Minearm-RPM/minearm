@@ -10,7 +10,7 @@ url: https://github.com/KraHsu/HsuBlog.git
 ```bash
 rootfs:
 |
-----
+---
 |   +---hooks
 |   +---info
 |   +---logs
