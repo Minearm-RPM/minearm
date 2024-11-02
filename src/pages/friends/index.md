@@ -7,8 +7,9 @@ useComments: true
 useToc: true
 ---
 
-## Minearm一族
-谁想成为族人的来[这里](https://github.com/Minearm-RPM/minearm/issues/3)申请一下
+## Minearm-RPM的盟友
+
+谁想成为盟友的来[这里](https://github.com/Minearm-RPM/minearm/issues/3)申请一下
 
 :::links[The Autor of Minearm-RPM & Website]
 
