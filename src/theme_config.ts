@@ -61,6 +61,12 @@ export const ThemeConfig: Configs = {
             icon: "local:solid.link",
             link: "/friends",
           },
+          {
+            name: "MC",
+            customClass: "MC",
+            icon: "local:solid.paper-plane",
+            link: "https://game.minearm.org",
+          },
         ],
       },
       {
