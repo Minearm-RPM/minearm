@@ -8,6 +8,9 @@ url: https://github.com/KraHsu/HsuBlog.git
 # 文件结构
 
 ```bash
+rootfs:
+|
+---
 |   +---hooks
 |   +---info
 |   +---logs
@@ -60,6 +63,8 @@ url: https://github.com/KraHsu/HsuBlog.git
     |   +---dist
     |   \---tags
     \---utils
+```
+
 ```
 
 ~~~
