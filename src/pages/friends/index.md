@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/DefaultMdLayout.astro"
-title: Minearm一族
+title: Minearm盟友
 description: ""
 heroColor: "#007aff"
 useComments: true
