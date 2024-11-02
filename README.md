@@ -44,6 +44,12 @@ root
 ```
 
 ~~~
+# 拉取minearm
+git clone https://github.com/Minearm-RPM/minearm.git
+
+~~~
+
+~~~
 # 安装依赖
 npm install
 # 更新
