@@ -1,13 +1,14 @@
 ---
 layout: "../../layouts/DefaultMdLayout.astro"
-title: Link exchange
+title: Minearm一族
 description: ""
 heroColor: "#007aff"
 useComments: true
 useToc: true
 ---
 
-## Link exchange
+## Minearm一族
+谁想成为族人的来[这里](https://github.com/Minearm-RPM/minearm/issues/3)申请一下
 
 :::links[The Autor of Minearm-RPM & Website]
 
