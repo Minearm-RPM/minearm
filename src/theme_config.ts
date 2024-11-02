@@ -164,7 +164,7 @@ export const ThemeConfig: Configs = {
     // },
   	 type: "waline",
   	 options: {
-	   serverURL: "https://you.server.com",
+	   serverURL: "https://youserver.com",
      },
     //type: true,
     //options: null,
