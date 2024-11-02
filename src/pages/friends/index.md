@@ -18,3 +18,5 @@ useToc: true
 ::link[B站破击]{logo="/pojipao.avif" desc="全互联网最中二的傻逼" link="https://space.bilibili.com/1598534390"}
 
 ::link[ღꦿlove.情绪℘]{logo="/13.jpg" desc="空空的夜,糯糯的情,相思无益溢心间" link="mailto:2939765322@qq.com"}
+
+::link[三的根号]{logo="/3.png" desc="√3每日发疯" link="https://space.bilibili.com/1832902560"}
