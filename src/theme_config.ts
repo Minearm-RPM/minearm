@@ -164,7 +164,7 @@ export const ThemeConfig: Configs = {
     // },
   	 type: "waline",
   	 options: {
-	   serverURL: "https://api.minearm.org",
+	   serverURL: "https://you.server.com",
      },
     //type: true,
     //options: null,
