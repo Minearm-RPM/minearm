@@ -20,3 +20,5 @@ useToc: true
 ::link[ღꦿlove.情绪℘]{logo="/13.jpg" desc="空空的夜,糯糯的情,相思无益溢心间" link="mailto:2939765322@qq.com"}
 
 ::link[三的根号]{logo="/3.png" desc="√3每日发疯" link="https://space.bilibili.com/1832902560"}
+
+::link[只鱼]{logo="https://zhiyuhub.top/upload/be2bb1bb-8d91-4e9b-8b4d-00d4c45774ae.png" desc="root@kali:/#" link="https://zhiyuhub.top/"}
