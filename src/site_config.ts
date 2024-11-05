@@ -3,7 +3,7 @@ export const SiteConfig: SiteConfig = {
   title: "Minearm-RPM & Website",
   description: "This is a Minearm-RPM & Website",
   localSearch: true,
-  markdownMath: true,
+  markdownMath: false,
 };
 
 interface SiteConfig {
