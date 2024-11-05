@@ -1,9 +1,9 @@
 export const SiteConfig: SiteConfig = {
-  site: "https://bing.com/",
+  site: "https://ww2.minearm.org/",
   title: "Minearm-RPM & Website",
   description: "This is a Minearm-RPM & Website",
   localSearch: true,
-  markdownMath: false,
+  markdownMath: true,
 };
 
 interface SiteConfig {
