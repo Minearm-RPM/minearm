@@ -8,7 +8,7 @@ url: https://github.com/KraHsu/HsuBlog.git
 # 文件结构
 
 ```bash
-root@rsp4:/home/mine/Minearm# tree -d
+root@rsp4:/Minearm# tree -d
 .
 ├── public
 │   └── scripts
