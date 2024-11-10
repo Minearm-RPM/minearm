@@ -1,7 +1,7 @@
 {
   "name": "minearm",
   "description": "Welcome to Minearm & Website.",
-  "version": "0.0.1",
+  "version": "0.1",
   "homepage": "https://github.com/Minearm-RPM/minearm",
   "private": false,
   "type": "module",
