@@ -1,4 +1,4 @@
-# Minearm & Website
+# Minearm & Blog
 Minearm是一个astro主题
 # 本主题是从HusBlog改进而来的
 url: https://github.com/KraHsu/HsuBlog.git
@@ -8,82 +8,66 @@ url: https://github.com/KraHsu/HsuBlog.git
 # 文件结构
 
 ```bash
-rootfs:
-|
----
-|   +---hooks
-|   +---info
-|   +---logs
-|   |   \---refs
-|   |       +---heads
-|   |       \---remotes
-|   |           \---origin
-|   +---objects
-|   |   +---info
-|   |   \---pack
-|   \---refs
-|       +---heads
-|       +---remotes
-|       |   \---origin
-|       \---tags
-+---.vercel
-+---public
-|   \---scripts
-\---src
-    +---components
-    |   +---animation
-    |   +---aside
-    |   +---client
-    |   +---footer
-    |   +---header
-    |   +---icons
-    |   +---loading
-    |   \---postlist
-    +---content
-    |   \---blog
-    |       \---default
-    |           +---history
-    |           |   +---公元前
-    |           |   \---近代篇
-    |           \---it
-    +---layouts
-    +---pages
-    |   +---about
-    |   +---blog
-    |   +---categories
-    |   |   \---[category]
-    |   +---friends
-    |   \---tags
-    |       \---[tag]
-    +---styles
-    |   +---blog
-    |   |   \---dist
-    |   +---components
-    |   |   \---dist
-    |   +---dist
-    |   \---tags
-    \---utils
+root@rsp4:/home/mine/Minearm# tree -d
+.
+├── public
+│   └── scripts
+└── src
+    ├── components
+    │   ├── animation
+    │   ├── aside
+    │   ├── client
+    │   ├── footer
+    │   ├── header
+    │   ├── icons
+    │   ├── loading
+    │   └── postlist
+    ├── content
+    │   └── blog
+    │       └── default
+    │           ├── history
+    │           │   ├── 公元前
+    │           │   └── 近代篇
+    │           └── it
+    ├── layouts
+    ├── pages
+    │   ├── about
+    │   ├── blog
+    │   ├── categories
+    │   │   └── [category]
+    │   ├── friends
+    │   └── tags
+    │       └── [tag]
+    ├── styles
+    │   ├── blog
+    │   │   └── dist
+    │   ├── components
+    │   │   └── dist
+    │   ├── dist
+    │   └── tags
+    └── utils
+
 ```
 
-~~~
+~~~bash
 # 拉取minearm
 git clone https://github.com/Minearm-RPM/minearm.git
 
 ~~~
 
-~~~
+~~~bash
 # 安装依赖
 npm install
-# 更新
+# 后续更新
 npm update
 ~~~
 
-~~~
+~~~bash
 # 启动开发预览
 npm run dev
 ~~~
 
-~~~
+~~~bash
 # 构建和预览
 npm run build
 npm run preview
