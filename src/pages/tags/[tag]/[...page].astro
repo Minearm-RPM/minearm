@@ -2,7 +2,7 @@
 import "@style/tags/tags.scss";
 import TagsLayout from "@src/layouts/TagsLayout.astro";
 import { getCollection, CollectionEntry } from "astro:content";
-import { utils } from "@src/utils/utils";
+import { utils }from "@src/utils/utils";
 
 export async function getStaticPaths({ paginate }: any) {
   const allPosts: CollectionEntry<"blog">[] = (
@@ -17,7 +17,7 @@ export async function getStaticPaths({ paginate }: any) {
     ),
   ];
 
-  return uniqueTags.map((tag) => {
+  return uniqueTags.flatMap((tag) => {
     const filteredPosts = allPosts.filter((post) =>
       post.data.tags?.includes(tag)
     );
@@ -31,6 +31,12 @@ export async function getStaticPaths({ paginate }: any) {
 
 const { tag } = Astro.params;
 const { page, tags } = Astro.props;
+
+
+console.log("Tag Params:", tag);
+console.log("Page Props:", page);
+console.log("Tags Props:", tags);
+
 ---
 
 <TagsLayout page={page} tags={tags} activeTag={tag} baseurl="/tags/" />
