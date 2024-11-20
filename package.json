@@ -1,10 +1,10 @@
 {
   "name": "minearm",
   "description": "Welcome to Minearm & Website.",
-  "version": "0.0.3-beta.2",
+  "version": "0.0.3-beta.3",
   "homepage": "https://github.com/Minearm-RPM/minearm",
-  "private": true,
   "type": "module",
+  "license": "MIT",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -57,5 +57,8 @@
   "keywords": [
     "astro-component",
     "withastro"
-  ]
+  ],
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
