@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@3
 
       - name: Set up Node.js
-        uses: actions/setup-node@3
+        uses: actions/setup-node@4
         with:
           node-version: '20' # 或者你使用的 Node.js 版本
 
