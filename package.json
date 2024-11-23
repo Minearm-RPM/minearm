@@ -1,5 +1,5 @@
 {
-  "name": "minearm",
+  "name": "minearm-website",
   "description": "Welcome to Minearm & Website.",
   "version": "0.0.3-beta.2",
   "homepage": "https://github.com/Minearm-RPM/minearm",
@@ -35,7 +35,7 @@
     "markdown-loader": "^8.0.0",
     "marked": "^15.0.0",
     "mdast-util-to-string": "^4.0.0",
-    "pnpm": "^9.13.2",
+    "pnpm": "^9.14.2",
     "reading-time": "^1.5.0",
     "rehype-katex": "7.0.1",
     "rehype-mathjax": "6.0.0",
