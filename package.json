@@ -1,7 +1,7 @@
 {
   "name": "minearm-website",
   "description": "Welcome to Minearm & Website.",
-  "version": "0.0.3-beta.2",
+  "version": "0.0.3-beta.3",
   "homepage": "https://github.com/Minearm-RPM/minearm",
   "type": "module",
   "license": "MIT",
