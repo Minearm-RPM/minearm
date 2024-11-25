@@ -1,78 +1,69 @@
 # Minearm & Website
-Minearm是一个astro主题
-# 本主题是从HusBlog改进而来的
-url: https://github.com/KraHsu/HsuBlog.git
+# 本主题是从[HusBlog](https://github.com/KraHsu/HsuBlog.git)改进而来的
 
-成品: www.minearm.org
+但是Minearm & Website做出了很大的改变，比如修复了scss警告和升级astro版本到4.16.13
+
 
 # 文件结构
 
 ```bash
-root@rsp4:/Minearm# tree -d
-.
-├── public
-│   └── scripts
-└── src
-    ├── components
-    │   ├── animation
-    │   ├── aside
-    │   ├── client
-    │   ├── footer
-    │   ├── header
-    │   ├── icons
-    │   ├── loading
-    │   └── postlist
-    ├── content
-    │   └── blog
-    │       └── default
-    │           ├── history
-    │           │   ├── 公元前
-    │           │   └── 近代篇
-    │           └── it
-    ├── layouts
-    ├── pages
-    │   ├── about
-    │   ├── blog
-    │   ├── categories
-    │   │   └── [category]
-    │   ├── friends
-    │   └── tags
-    │       └── [tag]
-    ├── styles
-    │   ├── blog
-    │   │   └── dist
-    │   ├── components
-    │   │   └── dist
-    │   ├── dist
-    │   └── tags
-    └── utils
-
+root
+ ├─public
+ │  └─scripts
+ └─src
+    ├─components
+    │  ├─animation
+    │  ├─aside
+    │  ├─client
+    │  ├─footer
+    │  ├─header
+    │  ├─icons
+    │  ├─loading
+    │  └─postlist
+    ├─content
+    │  └─blog
+    │      └─default
+    ├─layouts
+    ├─pages
+    │  ├─about
+    │  ├─blog
+    │  ├─categories
+    │  │  └─[category]
+    │  ├─friends
+    │  └─tags
+    │      └─[tag]
+    ├─styles
+    │  ├─blog
+    │  │  └─dist
+    │  ├─components
+    │  │  └─dist
+    │  ├─dist
+    │  └─tags
+    └─utils
 ```
 
 ~~~bash
-# 拉取minearm
-git clone https://github.com/Minearm-RPM/minearm.git
-
+# 安装主题
+npm i minearm-website
 ~~~
 
-~~~bash
+~~~
 # 安装依赖
 npm install
-# 后续更新
+# 更新
 npm update
 ~~~
 
-~~~bash
+~~~
 # 启动开发预览
 npm run dev
 ~~~
 
-~~~bash
+~~~
 # 构建和预览
 npm run build
 npm run preview
 ~~~
-
 
 # 许可证
 本项目在MIT许可证下授权，版权所有©2024
