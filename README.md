@@ -3,6 +3,8 @@
 
 但是Minearm & Website做出了很大的改变，比如修复了scss警告和升级astro版本到4.16.13
 
+# 效果
+![Minearm](https://portal.astro.build/_image?href=https%3A%2F%2Fstorage.googleapis.com%2Fdev-portal-bucket%2Fkotpt1ztaalrk5frua5pnwdvoh185ylgg0rio9.webp)
 
 # 文件结构
 
