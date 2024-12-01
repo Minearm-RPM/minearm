@@ -9,39 +9,63 @@
 # 文件结构
 
 ```bash
-root
- ├─public
- │  └─scripts
- └─src
-    ├─components
-    │  ├─animation
-    │  ├─aside
-    │  ├─client
-    │  ├─footer
-    │  ├─header
-    │  ├─icons
-    │  ├─loading
-    │  └─postlist
-    ├─content
-    │  └─blog
-    │      └─default
-    ├─layouts
-    ├─pages
-    │  ├─about
-    │  ├─blog
-    │  ├─categories
-    │  │  └─[category]
-    │  ├─friends
-    │  └─tags
-    │      └─[tag]
-    ├─styles
-    │  ├─blog
-    │  │  └─dist
-    │  ├─components
-    │  │  └─dist
-    │  ├─dist
-    │  └─tags
-    └─utils
+rootfs:
+|
+---
+|   +---hooks
+|   +---info
+|   +---logs
+|   |   \---refs
+|   |       +---heads
+|   |       \---remotes
+|   |           \---origin
+|   +---objects
+|   |   +---info
+|   |   \---pack
+|   \---refs
+|       +---heads
+|       +---remotes
+|       |   \---origin
+|       \---tags
++---.vercel
++---public
+|   \---scripts
+\---src
+    +---components
+    |   +---animation
+    |   +---aside
+    |   +---client
+    |   +---footer
+    |   +---header
+    |   +---icons
+    |   +---loading
+    |   \---postlist
+    +---content
+    |   \---blog
+    |       \---default
+    |           +---history
+    |           |   +---公元前
+    |           |   \---近代篇
+    |           \---it
+    +---layouts
+    +---pages
+    |   +---about
+    |   +---blog
+    |   +---categories
+    |   |   \---[category]
+    |   +---friends
+    |   \---tags
+    |       \---[tag]
+    +---styles
+    |   +---blog
+    |   |   \---dist
+    |   +---components
+    |   |   \---dist
+    |   +---dist
+    |   \---tags
+    \---utils
+```
+
 ```
 
 ~~~bash

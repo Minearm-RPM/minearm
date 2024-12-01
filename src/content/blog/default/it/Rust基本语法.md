@@ -4,6 +4,8 @@ description: 'Rust核心的基本语法'
 pubDate: 2024-10-27
 heroColor: ''
 abbrlink: it/Rust基本语法
+cover: "/rust1.png"
+coverAlt: "Rust1"
 tags: 
     - '编程基础'
     - 'Rust'
@@ -11,6 +13,9 @@ tags:
 category: 'Rust'
 ---
 # Rust 基础语法
+
+(说明) 复制滴别想，抄作业滴不要，若需要，滴开启超级复制插件
+
 变量，基本类型，函数，注释和控制流，这些几乎是每种编程语言都具有的编程概念。
 
 这些基础概念将存在于每个 Rust 程序中，及早学习它们将使你以最快的速度学习 Rust 的使用。

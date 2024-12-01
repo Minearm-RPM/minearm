@@ -4,6 +4,8 @@ description: '关于Minearm-RPM & Website所使用的fusejs的扩展搜索语法
 heroColor: ''
 pubDate: 2024-09-25
 abbrlink: Search-help
+cover: "/help1.png"
+coverAlt: "help1"
 tags: 
     - 'localSearch'
     - 'Extended Search'
