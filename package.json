@@ -1,7 +1,7 @@
 {
   "name": "minearm-website",
   "description": "Welcome to Minearm & Website.",
-  "version": "0.0.3-beta.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/Minearm-RPM/minearm",
   "type": "module",
   "license": "MIT",
@@ -18,14 +18,14 @@
     "pu": "ts-node ./pu.ts"
   },
   "dependencies": {
-    "@astrojs/markdown-remark": "^5.3.0",
-    "@astrojs/mdx": "^3.1.9",
-    "@astrojs/rss": "^4.0.9",
+    "@astrojs/markdown-remark": "^6.0.1",
+    "@astrojs/mdx": "^4.0.2",
+    "@astrojs/rss": "^4.0.10",
     "@duannx/vue-client-only": "^1.0.3",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@iconify-json/tabler": "^1.2.8",
-    "astro": "^4.16.13",
+    "astro": "^5.0.5",
     "astro-i18next": "^1.0.0-beta.21",
     "astro-icon": "^1.1.2",
     "fuse.js": "^6.6.2",
@@ -47,12 +47,12 @@
   },
   "devDependencies": {
     "@astrojs/sitemap": "^3.2.1",
-    "@astrojs/vue": "^4.5.2",
+    "@astrojs/vue": "^5.0.2",
     "@types/yargs": "^17.0.24",
     "sass": "1.70.0",
     "scss": "^0.2.4",
     "ts-node": "10.9.2",
-    "vue": "3.5.0"
+    "vue": "^3.5.13"
   },
   "keywords": [
     "astro-component",
