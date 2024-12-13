@@ -3,19 +3,23 @@ import HomeLayout from "@src/layouts/HomeLayout.astro";
 import PostsList from "@comp/postlist/postsList.astro";
 import Pagination from "@comp/postlist/pagination.astro";
 import { ThemeConfig } from "@src/theme_config";
-
 import { utils } from "@src/utils/utils";
-import { CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry, getCollection } from "astro:content";
+
 export async function getStaticPaths({ paginate }: any) {
   const posts: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
-    (a, b) => utils.compareDates(a.data.pubDate, b.data.pubDate)
+    (a: { data: { pubDate: string; }; }, b: { data: { pubDate: string; }; }) => utils.compareDates(a.data.pubDate, b.data.pubDate)
   );
   return paginate(posts, { pageSize: 10 });
 }
 
 const { page } = Astro.props;
----
 
+// 确保 page 对象包含正确的数据
+if (!page || !page.data) {
+  throw new Error("Invalid page data");
+}
+---
 <HomeLayout>
   {
     ThemeConfig.homePage.heroShoot && (
@@ -37,7 +41,7 @@ const { page } = Astro.props;
       page.lastPage > 1 && (
         <Pagination
           baseurl="/"
-          pageSize={page.lastPage}
+          pageSize={page.pageSize}
           activePage={page.currentPage}
         />
       )
