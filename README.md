@@ -1,6 +1,6 @@
 # Minearm & Website
 # 本主题是从[HusBlog](https://github.com/KraHsu/HsuBlog.git)改进而来的
-最新的正式版是0.1.1
+最新的正式版是0.1.2
 最新的测试版是0.0.3-beta.4
 
 但是Minearm & Website做出了很大的改变，比如修复了scss警告和升级astro版本到5.0.5
