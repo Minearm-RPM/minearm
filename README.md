@@ -56,23 +56,23 @@ npm i minearm-website
 ~~~
 
 # 进入astro目录
-~~~
+~~~bash
 cd node_modules/minearm-website
 ~~~
 
-~~~
+~~~bash
 # 安装依赖
 npm install
 # 更新
 npm update
 ~~~
 
-~~~
+~~~bash
 # 启动开发预览
 npm run dev
 ~~~
 
-~~~
+~~~bash
 # 构建和预览
 npm run build
 npm run preview
