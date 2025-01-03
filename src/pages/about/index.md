@@ -8,10 +8,10 @@ useToc: true
 ---
 # Minearm & Website
 # 本主题是从[HusBlog](https://github.com/KraHsu/HsuBlog.git)改进而来的
-最新的正式版是0.1.2
+最新的正式版是0.1.3
 最新的测试版是0.0.3-beta.4
 
-但是Minearm & Website做出了很大的改变，比如修复了scss警告和升级astro版本到5.0.5
+但是Minearm & Website做出了很大的改变，比如修复了scss警告和升级astro版本到5.1.2
 
 # 效果
 ![Minearm](https://portal.astro.build/_image?href=https%3A%2F%2Fstorage.googleapis.com%2Fdev-portal-bucket%2Fkotpt1ztaalrk5frua5pnwdvoh185ylgg0rio9.webp)
@@ -61,11 +61,14 @@ root
 ~~~bash
 # 安装主题
 npm i minearm-website
+git clone https://github.com/Minearm-RPM/Minearm.git node_modules/
 ~~~
 
 # 进入astro目录
 ~~~bash
 cd node_modules/minearm-website
+# 或者(对应上面两种方法)
+cd node_modules/
 ~~~
 
 ~~~bash
@@ -87,8 +90,9 @@ npm run preview
 ~~~
 
 # 许可证
+
 本项目在MIT许可证下授权，版权所有©2024
 
 由Minearm-RPM构建的
 
-# 转载时需标明出处！。
+# 转载时需标明出处
