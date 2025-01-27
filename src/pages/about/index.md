@@ -8,10 +8,10 @@ useToc: true
 ---
 # Minearm & Website
 # 本主题是从[HusBlog](https://github.com/KraHsu/HsuBlog.git)改进而来的
-最新的正式版是0.1.3
+最新的正式版是0.2.0
 最新的测试版是0.0.3-beta.4
 
-但是Minearm & Website做出了很大的改变，比如修复了scss警告和升级astro版本到5.1.2
+但是Minearm & Website做出了很大的改变，比如修复了scss警告和升级astro版本到5.1.10
 
 # 效果
 ![Minearm](https://portal.astro.build/_image?href=https%3A%2F%2Fstorage.googleapis.com%2Fdev-portal-bucket%2Fkotpt1ztaalrk5frua5pnwdvoh185ylgg0rio9.webp)
