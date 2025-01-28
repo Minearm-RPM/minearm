@@ -1,6 +1,5 @@
 import { defineCollection, z } from "astro:content";
 import { utils } from "@utils/utils";
-
 const blogCollection = defineCollection({
   schema: z.object({
     title: z.string(),

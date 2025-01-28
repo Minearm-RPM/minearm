@@ -1,6 +1,7 @@
 ---
 import "@style/components/main.scss";
 import BaseLayout from "./BaseLayout.astro";
+import { ViewTransitions } from 'astro:transitions';
 import Aside from "@comp/aside/aside.astro";
 import { ThemeConfig } from "@src/theme_config";
 interface Props {
@@ -23,3 +24,4 @@ const { asideDir } = Astro.props;
     </main>
   </article>
 </BaseLayout>
+ <ViewTransitions />

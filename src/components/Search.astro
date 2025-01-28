@@ -1,0 +1,30 @@
+---
+import "@style/components/search.scss";
+import SearchCore from "./client/searchCore.vue";
+import { ThemeConfig } from "@src/theme_config";
+import { utils } from "@src/utils/utils";
+
+const hits = ThemeConfig.site.localSearch.hits.map((hit) =>
+  utils.replaceLink(hit, "search-hit")
+);
+const comment = utils.replaceLink(
+  utils.executeEmbeddedScripts(ThemeConfig.site.localSearch.comment)
+);
+---
+
+<div id="search" class="hide">
+  <div class="search-wrap">
+    <div class="search-header">
+      <div class="search-title">搜索</div>
+      <div class="search-close" onclick={"hsu.closesearch()"}>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+    <SearchCore client:only />
+    <div class="search-hits">
+      {hits.map((hit) => <Fragment set:html={hit} />)}
+    </div>
+    <div class="search-comment" set:html={comment} />
+  </div>
+  <div class="search-mask" onclick={"hsu.closesearch()"}></div>
+</div>

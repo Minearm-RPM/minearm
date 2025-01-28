@@ -1,40 +1,54 @@
 ---
 import "@style/components/pagination.scss";
+
 interface Props {
-  pageSize: number;
-  activePage: number;
   baseurl: string;
+  currentPage: number;
+  totalPages: number;
 }
 
-const { pageSize, activePage, baseurl } = Astro.props;
+const { baseurl, currentPage, totalPages } = Astro.props;
+
+// 辅助函数，用于生成正确的 URL
+const getPageUrl = (page: number) => {
+  if (page === 1) {
+    return `${baseurl}/`;
+  }
+  return `${baseurl}/${page}`;
+};
 ---
 
 <nav class="pagination">
-  <div class:list={["pagination-pre", { "disable": activePage === 1 }]}>
-    <a
-      class="pagination-link"
-      href={`${baseurl}${activePage === 2 ? "" : activePage - 1}`}
-    >
-      <span>上一页</span>
-    </a>
-  </div>
-  <div class:list={["pagination-next", { "disable": activePage === pageSize }]}>
-    <a class="pagination-link" href={`${baseurl}${activePage + 1}`}>
-      <span>下一页</span>
-    </a>
-  </div>
+  <!-- 上一页按钮 -->
+  <a
+    href={currentPage > 1 ? getPageUrl(currentPage - 1) : '#'}
+    class:list={[ "pagination-link", { "pagination-disabled": currentPage === 1 }]}
+  >
+    <span>上一页</span>
+  </a>
+
+  <!-- 页码列表 -->
   <ul class="pagination-list">
-    {
-      Array.from({ length: pageSize }, (_, i) => i + 1).map((num) => (
-        <li>
+    {Array.from({ length: totalPages }, (_, index) => {
+      const page = index + 1;
+      return (
+        <li key={page}>
           <a
-            href={`${baseurl}${num === 1 ? "" : num}`}
-            class:list={[{ "active": num === activePage }, "pagination-number"]}
+            href={getPageUrl(page)}
+            class:list={[ "pagination-number", { "active": currentPage === page }]}
           >
-            <span>{num}</span>
+            <span>{page}</span>
           </a>
         </li>
-      ))
-    }
+      );
+    })}
   </ul>
+
+  <!-- 下一页按钮 -->
+  <a
+    href={currentPage < totalPages ? getPageUrl(currentPage + 1) : '#'}
+    class:list={[ "pagination-link", { "pagination-disabled": currentPage === totalPages }]}
+  >
+    <span>下一页</span>
+  </a>
 </nav>

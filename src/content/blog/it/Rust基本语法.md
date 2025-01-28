@@ -23,6 +23,7 @@ category: 'Rust'
 这些基础概念将存在于每个 Rust 程序中，及早学习它们将使你以最快的速度学习 Rust 的使用。
 
 # 变量
+
 首先必须说明，Rust 是强类型语言，但具有自动判断变量类型的能力。这很容易让人与弱类型语言产生混淆。
 
 默认情况下，Rust 中的变量是不可变的，除非使用 mut 关键字声明为可变变量。
@@ -110,6 +111,7 @@ fn add(a: i32, b: i32) -> i32 {
 如果函数没有返回值，类型默认为 ()（即空元组）。
 
 **控制流**
+
 # if 表达式
 
 - 实例
@@ -121,6 +123,7 @@ if number < 5 {
     println!("大于等于 5");
 }
 ```
+
 # loop 循环
 
 loop 是 Rust 中的无限循环，可以使用 break 退出循环。
@@ -155,7 +158,9 @@ for number in 1..4 {
     println!("{}!", number);
 }
 ```
+
 # 所有权
+
 Rust 中的所有权是独特的内存管理机制，核心概念包括所有权 (ownership)、借用 (borrowing) 和引用 (reference)。
 
 所有权规则:
@@ -168,8 +173,11 @@ let s1 = String::from("hello");
 let s2 = s1; // s1 的所有权被转移给了 s2
 // println!("{}", s1); // 此处编译会报错，因为 s1 已不再拥有该值
 ```
+
 # 借用和引用
+
 借用允许引用数据而不获取所有权，通过 & 符号实现。
+
 ```rust
 fn main() {
     let s = String::from("hello");
@@ -181,6 +189,7 @@ fn calculate_length(s: &String) -> usize {
     s.len()
 }
 ```
+
 # 结构体
 
 结构体用于创建自定义类型，字段可以包含多种数据类型。
@@ -201,6 +210,7 @@ let user1 = User {
     active: true,
 };
 ```
+
 # 枚举
 
 枚举允许定义可能的几种数据类型中的一种。
@@ -215,7 +225,9 @@ enum IpAddrKind {
 let four = IpAddrKind::V4;
 let six = IpAddrKind::V6;
 ```
+
 # 模式匹配
+
 match 是 Rust 中强大的控制流工具，类似于 switch 语句。
 
 - 实例
@@ -236,6 +248,7 @@ fn value_in_cents(coin: Coin) -> u8 {
     }
 }
 ```
+
 # 错误处理
 
 Rust 有两种主要的错误处理方式：Result<T, E> 和 Option<T>。
@@ -282,6 +295,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     }
 }
 ```
+
 # 重影
 
 重影的概念与其他面向对象语言里的"重写"（Override）或"重载"（Overload）是不一样的。重影就是刚才讲述的所谓"重新绑定"，之所以加引号就是为了在没有介绍这个概念的时候代替一下概念。
