@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/DefaultMdLayout.astro"
+layout: ../../layouts/DefaultMdLayout.astro
 title: Minearm盟友
 description: ""
 heroColor: "#007aff"
@@ -17,8 +17,8 @@ useToc: true
 
 ::link[B站破击]{logo="/pojipao.avif" desc="全互联网最中二的傻逼" link="https://space.bilibili.com/1598534390"}
 
-::link[ღꦿlove.情绪℘]{logo="/13.jpg" desc="明天要被历史肘击😭" link="mailto:2939765322@qq.com"}
+::link[এ՞情绪ᮨ℘]{logo="/13.png" desc="明天要被历史肘击😭" link="mailto:2939765322@qq.com"}
 
 ::link[三的根号]{logo="/3.png" desc="√3每日发疯" link="https://space.bilibili.com/1832902560"}
 
-::link[只鱼]{logo="https://zhiyuhub.top/upload/be2bb1bb-8d91-4e9b-8b4d-00d4c45774ae.png" desc="root@kali:/#" link="https://zhiyuhub.top/"}
+::link[智宇]{logo="https://zhiyuhub.top/upload/be2bb1bb-8d91-4e9b-8b4d-00d4c45774ae.png" desc="root@kali:/#" link="https://zhiyuhub.top/"}

@@ -1,5 +1,5 @@
-@import "./animation.scss";
-@import "./custom.scss";
+@use "./animation.scss" as animation;
+@use "./custom.scss" as custom;
 // @import "./components/index.scss";
 // @import "./blog/index.scss";
 

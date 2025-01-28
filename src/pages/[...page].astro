@@ -6,11 +6,14 @@ import { ThemeConfig } from "@src/theme_config";
 import { utils } from "@src/utils/utils";
 import { type CollectionEntry, getCollection } from "astro:content";
 
-export async function getStaticPaths({ paginate }: any) {
-  const posts: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
-    (a: { data: { pubDate: string; }; }, b: { data: { pubDate: string; }; }) => utils.compareDates(a.data.pubDate, b.data.pubDate)
-  );
-  return paginate(posts, { pageSize: 10 });
+export async function getStaticPaths({ paginate }) {
+  const posts = await getCollection("blog");
+  
+  // 根据 pubDate 排序文章
+  const sortedPosts = posts.sort((a, b) => utils.compareDates(a.data.pubDate, b.data.pubDate));
+
+  // 使用 paginate 生成分页路径，每页 10 篇文章
+  return paginate(sortedPosts, { pageSize: 8 });
 }
 
 const { page } = Astro.props;
@@ -39,11 +42,11 @@ if (!page || !page.data) {
     <PostsList posts={page.data} />
     {
       page.lastPage > 1 && (
-        <Pagination
-          baseurl="/"
-          pageSize={page.pageSize}
-          activePage={page.currentPage}
-        />
+      <Pagination
+        baseurl=""
+        currentPage={page.currentPage}
+        totalPages={page.lastPage}
+      />
       )
     }
   </Fragment>
