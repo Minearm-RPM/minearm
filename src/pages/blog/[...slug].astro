@@ -1,5 +1,5 @@
 ---
-import { CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry, getCollection } from "astro:content";
 import PostLayout from "@src/layouts/PostLayout.astro";
 import HeroWave from "@comp/header/heroWave.astro";
 import GetIcon from "@comp/icons/getIcon.astro";
@@ -66,3 +66,12 @@ const { Content, remarkPluginFrontmatter } = await post.render();
   </HeroWave>
   <Content />
 </PostLayout>
+<article>
+  <!-- 文章正文 -->
+  <h1>{post.title}</h1>
+  <div>{post.content}</div>
+
+  <!-- 评论区域 -->
+  <div class="comments-section">
+  </div>
+</article>
