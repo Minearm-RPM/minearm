@@ -1,32 +1,22 @@
 {
-  "ts-node": {
-    "esm": true
-  },
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "baseUrl": ".",
     "strictNullChecks": true,
     "jsx": "preserve",
     "paths": {
-      "@comp/*": [
-        "src/components/*"
-      ],
-      "@ass/*": [
-        "src/assets/*"
-      ],
-      "@style/*": [
-        "src/styles/*"
-      ],
-      "@src/*": [
-        "src/*"
-      ],
-      "@utils/*": [
-        "src/utils/*"
-      ],
-      "@layout/*": [
-        "src/layouts/*"
-      ]
-    }
-  }
+      "@comp/*": ["src/components/*"],
+      "@ass/*": ["src/assets/*"],
+      "@style/*": ["src/styles/*"],
+      "@src/*": ["src/*"],
+      "@utils/*": ["src/utils/*"],
+      "@layout/*": ["src/layouts/*"]
+    },
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src"]
 }

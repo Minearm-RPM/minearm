@@ -126,9 +126,7 @@ const addAbbrlinkToFile = async (filepath: string) => {
       const pubDateStr = parsedMatter.data.pubDate;
       const pubDate = new Date(pubDateStr);
       const abbrlink = pubDate.getTime().toString(36);
-
       parsedMatter.data.abbrlink = abbrlink;
-
       const fileContent = matter.stringify(content, parsedMatter.data);
       await writeFileAsync(filepath, fileContent);
       console.log(`Permalink added: ${filepath}`);
