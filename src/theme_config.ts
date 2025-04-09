@@ -170,7 +170,7 @@ export const ThemeConfig: Configs = {
     // },
   	 type: "waline",
   	 options: {
-	   serverURL: "https://comments.minearm.org/",
+	   serverURL: "https://example.com/",
      },
     //type: true,
     //options: null,
